@@ -1,0 +1,30 @@
+* {
+    box-sizing: border-box;
+}
+
+.primerItem {
+    margin-left: 500px;
+}
+
+.sobreNosotros {
+    margin-left: 550px;
+}
+
+.sobreNosotros:hover {
+    text-decoration: underline;
+}
+
+.middle {
+    text-transform: uppercase;
+    border: 1px transparent solid;
+    border-radius: 10px;
+}
+
+.middle:hover {
+    color: white;
+    border: 1px black solid;
+    border-radius: 10px;
+    text-decoration: underline;
+    background-color: black;
+}
+
