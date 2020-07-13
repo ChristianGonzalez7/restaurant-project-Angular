@@ -1,0 +1,48 @@
+* {
+    box-sizing: border-box;
+}
+
+.logo {
+    width: 70px;
+}
+
+.primerItem {
+    margin-left: 500px;
+}
+
+.sobreNosotros {
+    margin-left: 400px;
+}
+
+.sobreNosotros:hover {
+    text-decoration: underline;
+}
+
+.middle {
+    text-transform: uppercase;
+    border: 1px transparent solid;
+    border-radius: 10px;
+}
+
+.middle:hover {
+    text-decoration: underline;
+}
+
+.activo {
+    color: white !important;
+    border: 1px black solid;
+    border-radius: 10px;
+    text-decoration: underline;
+    background-color: black;
+}
+
+.header {
+    width: 100%;
+    height: 500px;
+}
+
+img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}

@@ -1,1 +1,41 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-white">
+    <a class="navbar-brand" href="#"><img src="../assets/images/logo.png" class="logo" alt="logo"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+    <div class="primerItem collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="middle nav-item active p-2">
+          <a class="nav-link text-reset p-3" [routerLink]="['/homepage']" routerLinkActive="activo">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="middle nav-item  active ml-5 p-2">
+          <a class="nav-link text-reset p-3" [routerLink]="['/restaurante1']" routerLinkActive="activo">
+            Restaurantes
+          </a>
+        </li>
+        <li class="middle nav-item active ml-5 p-2">
+            <a class="nav-link text-reset p-3" [routerLink]="['/menus']" routerLinkActive="activo">Menu's</a>
+        </li>
+        <li class="middle nav-item active ml-5 p-2 p-3">
+            <a class="nav-link text-reset" [routerLink]="['/galeria']" routerLinkActive="activo">Galería</a>
+          </li>
+          <li class="nav-item dropdown mt-3 sobreNosotros">
+            <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Sobre nosotros
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" [routerLink]="['/historia']">Historia</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" [routerLink]="['/equipo']">Equipo</a>
+            </div>
+          </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="header">
+    <img src="../assets/images/header.png" alt="header">
+  </div>
+
 <router-outlet></router-outlet>
