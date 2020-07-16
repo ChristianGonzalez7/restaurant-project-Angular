@@ -3,7 +3,7 @@
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-.logo {
+.logo-header {
     width: 70px;
 }
 
@@ -42,10 +42,16 @@
     height: 500px;
 }
 
-img {
+header, img {
     height: 100%;
     width: 100%;
-    object-fit: cover;
+    object-fit: cover !important;
+}
+
+div, img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
 }
 
 .footer {
@@ -56,13 +62,22 @@ img {
     height: 50px;
 }
 
-.fbLogo .wppLogo .instaLogo {
-    max-width: 20em;
-    max-height: 20em;
+.footer-logo-container {
+    max-width: 170px;
+    margin-right: 140px;
+}
+
+.footer-logo {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
 }
 
 .footer-logos {
-    max-height: 100px;
-    max-width: 100px;
-    margin: 0px;
+    width: 100px;
+    margin-top: 25px;
+}
+
+.img-footer-logos {
+    cursor: pointer;
 }
