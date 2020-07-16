@@ -1,5 +1,5 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-white">
-    <a class="navbar-brand" href="#"><img src="../assets/images/logo.png" class="logo-header" alt="logo"></a>
+  <nav class="navbar navbar-expand-lg navbar-light bg-white position-fixed container-fluid mb-5">
+    <a class="navbar-brand" href="#"><img src="../assets/images/logo.png" class="logo-header img-contain" alt="logo"></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -9,45 +9,45 @@
         <li class="middle nav-item active p-2">
           <a class="nav-link text-reset p-3" [routerLink]="['/homepage']" routerLinkActive="activo">Home <span class="sr-only">(current)</span></a>
         </li>
-        <li class="middle nav-item  active ml-5 p-2">
+        <li class="middle nav-item active p-2">
           <a class="nav-link text-reset p-3" [routerLink]="['/restaurante1']" routerLinkActive="activo">
             Restaurantes
           </a>
         </li>
-        <li class="middle nav-item active ml-5 p-2">
+        <li class="middle nav-item active p-2">
             <a class="nav-link text-reset p-3" [routerLink]="['/menus']" routerLinkActive="activo">Menu's</a>
         </li>
-        <li class="middle nav-item active ml-5 p-2 p-3">
-            <a class="nav-link text-reset" [routerLink]="['/galeria']" routerLinkActive="activo">Galería</a>
+        <li class="middle nav-item active p-2">
+            <a class="nav-link text-reset p-3" [routerLink]="['/galeria']" routerLinkActive="activo">Galería</a>
           </li>
-          <li class="nav-item dropdown mt-3 sobreNosotros">
+          <li class="nav-item dropdown mt-4 sobreNosotros">
             <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               Sobre nosotros
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" [routerLink]="['/historia']">Historia</a>
+              <a class="dropdown-item p-2" [routerLink]="['/historia']">Historia</a>
               <div class="dropdown-divider"></div>
-              <a class="dropdown-item" [routerLink]="['/equipo']">Equipo</a>
+              <a class="dropdown-item p-2" [routerLink]="['/equipo']">Equipo</a>
             </div>
           </li>
-      </ul>
+        </ul>
     </div>
   </nav>
 
-  <div class="header">
-    <header>
-    <img src="../assets/images/header.png" id="img-header" alt="header">
-  </header>
-  </div>
+<div class="header-container">
+
+  <img src="../assets/images/header.png" id="img-header" alt="header">
+
+</div>
 
 <router-outlet></router-outlet>
 
   <div class="row footer justify-content-center">
-    <div class="col-sm-6 col-lg-2 footer-logo-container"><img src="../assets/images/logo.png" class="footer-logo" alt="logo"></div>
+    <div class="col-sm-6 col-lg-2 footer-logo-container"><img src="../assets/images/logo.png" class="footer-logo img-contain" alt="logo"></div>
     <div class="col-sm-6 col-lg-3 pl-5 mt-3">
-      <div class="row p-1"><span><b>LO DE CHRIS</b>, HAMBURGUESERÍA ARTESANAL</span></div>
-      <div class="row p-1"><span><b>Via Laietana 65</b>, Barcelona -<b>934 535 698</b></span></div>
-      <div class="row p-1"><span><b>Carrer de Estruc 8</b>, Barcelona -<b>932 856 521</b></span></div>
+      <div class="row p-1"><span><b>LO DE CHRIS</b> - HAMBURGUESERÍA ARTESANAL</span></div>
+      <div class="row p-1"><span><b>Via Laietana 65</b>, Barcelona -<b> 934 535 698</b></span></div>
+      <div class="row p-1"><span><b>Carrer de Estruc 8</b>, Barcelona -<b> 932 856 521</b></span></div>
     </div>
     <div class="col-sm-12 col-lg-2">
       <div class="row p-1"><b>Viernes y sábado:</b></div>
@@ -57,9 +57,9 @@
     </div>
     <div class="col-sm-12 col-lg-2">
       <div class="row logo-container mt-2 ml-5 pl-5">
-        <div class="col-lg-4 footer-logos"><img src="../assets/images/logo-facebook.png" class="img-footer-logos" alt="fb-logo"></div>
-        <div class="col-lg-4 footer-logos"><img src="../assets/images/instagram-logo.png" class="img-footer-logos" alt="wpp-logo"></div>
-        <div class="col-lg-4 footer-logos"><img src="../assets/images/whatsapp-logo.jpg" class="img-footer-logos" alt="insta-logo"></div>
+        <div class="col-lg-4 footer-logos"><img src="../assets/images/logo-facebook.png" class="img-footer-logos img-contain" alt="fb-logo"></div>
+        <div class="col-lg-4 footer-logos"><img src="../assets/images/instagram-logo.png" class="img-footer-logos img-contain" alt="wpp-logo"></div>
+        <div class="col-lg-4 footer-logos"><img src="../assets/images/whatsapp-logo.jpg" class="img-footer-logos img-contain" alt="insta-logo"></div>
       </div>
     </div>
   </div>
