@@ -1,1 +1,1 @@
-# restaurant-proyect-angular
+# restaurant-project-angular
