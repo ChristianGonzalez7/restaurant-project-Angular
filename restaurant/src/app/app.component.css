@@ -77,7 +77,6 @@
 .footer-logo-container {
     max-width: 150px;
     max-height: 150px;
-    margin-right: 140px;
 }
 
 .footer-logos {
@@ -89,4 +88,8 @@
 
 .img-footer-logos {
     cursor: pointer;
+}
+
+.footer-size {
+    font-size: 1em;
 }

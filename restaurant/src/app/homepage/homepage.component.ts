@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ServiceService } from '../service.service';
 
 @Component({
   selector: 'app-homepage',
@@ -7,9 +8,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomepageComponent implements OnInit {
 
-  constructor() { }
+  homepageImages: any
 
-  ngOnInit(): void {
+  constructor(private service: ServiceService) {
+    this.homepageImages = new Array;
+   }
+
+  async ngOnInit() {
+    this.homepageImages = await this.service.getHomepageImages();
+    console.log(this.homepageImages);
   }
+
+
 
 }
