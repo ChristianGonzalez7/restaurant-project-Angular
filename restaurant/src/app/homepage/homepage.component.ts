@@ -16,7 +16,6 @@ export class HomepageComponent implements OnInit {
 
   async ngOnInit() {
     this.homepageImages = await this.service.getHomepageImages();
-    console.log(this.homepageImages);
   }
 
 
