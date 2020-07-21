@@ -1,35 +1,35 @@
   <nav class="navbar navbar-expand-lg navbar-light bg-white position-fixed container-fluid mb-5">
     <a class="navbar-brand ml-5" href="#"><img src="../assets/images/logo.png" class="logo-header img-contain" alt="logo"></a>
-    <button class="navbar-toggler mr-5 bg-light" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler bg-light m-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
 
-    <div class="primerItem collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
-      <ul class="navbar-nav mr-auto">
-        <li class="middle nav-item active p-2">
-          <a class="nav-link text-reset p-3" [routerLink]="['/homepage']" routerLinkActive="activo">Home <span class="sr-only">(current)</span></a>
+    <div class="collapse navbar-collapse navbar-margin" id="navbarSupportedContent">
+      <ul class="navbar-nav">
+        <li class="nav-item active p-lg-2 li-width">
+          <a class="nav-link text-reset p-lg-3" [routerLink]="['/homepage']" routerLinkActive="activo">Home <span class="sr-only">(current)</span></a>
         </li>
-        <li class="middle nav-item active p-2">
-          <a class="nav-link text-reset p-3" [routerLink]="['/restaurante1']" routerLinkActive="activo">
+        <li class="left nav-item active p-lg-2 li-width">
+          <a class="nav-link text-reset p-lg-3" [routerLink]="['/restaurante1']" routerLinkActive="activo">
             Restaurantes
           </a>
         </li>
-        <li class="middle nav-item active p-2">
-            <a class="nav-link text-reset p-3" [routerLink]="['/menus']" routerLinkActive="activo">Menu's</a>
+        <li class="left nav-item active p-lg-2 li-width">
+            <a class="nav-link text-reset p-lg-3" [routerLink]="['/menus']" routerLinkActive="activo">Menu's</a>
         </li>
-        <li class="middle nav-item active p-2">
-            <a class="nav-link text-reset p-3" [routerLink]="['/galeria']" routerLinkActive="activo">Galería</a>
+        <li class="left nav-item active p-lg-2 li-width">
+            <a class="nav-link text-reset p-lg-3" [routerLink]="['/galeria']" routerLinkActive="activo">Galería</a>
           </li>
-          <li class="nav-item dropdown mt-4 sobreNosotros">
+        <li class="nav-item dropdown mt-lg-4 sobreNosotros">
             <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               Sobre nosotros
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item p-2" [routerLink]="['/historia']">Historia</a>
+              <a class="dropdown-item p-lg-2" [routerLink]="['/historia']">Historia</a>
               <div class="dropdown-divider"></div>
-              <a class="dropdown-item p-2" [routerLink]="['/equipo']">Equipo</a>
+              <a class="dropdown-item p-lg-2" [routerLink]="['/equipo']">Equipo</a>
             </div>
-          </li>
+        </li>
         </ul>
     </div>
   </nav>

@@ -12,17 +12,13 @@
     height: 200px;
 }
 
+.nav-link {
+    padding-left: 2rem;
+}
+
 .logo-header {
     max-width: 80px;
     max-height: 80px;
-}
-
-.primerItem {
-    margin-left: 500px;
-}
-
-.sobreNosotros {
-    margin-left: 400px;
 }
 
 .sobreNosotros:hover {
@@ -93,3 +89,50 @@
 .footer-size {
     font-size: 1em;
 }
+
+.sobreNosotros {
+    margin-left: 400px;
+}
+
+.navbar-margin {
+    margin-left: 0px;
+}
+
+.li-width {
+    width: auto;
+}
+
+/* Large Devices */
+@media screen and (min-width:481px) {
+    .navbar-margin {
+        margin-left: 600px;
+    }
+    .li-width {
+        width: auto;
+    }
+    .sobreNosotros {
+        margin-left: 400px;
+    }
+}
+/* Small Devices */
+@media screen and (max-width:480px) {
+    .navbar-margin {
+        margin-left: 0px;
+    }
+    .li-width {
+        width: 100%;
+    }
+    .sobreNosotros {
+        margin-left: 0px;
+    }
+    .activo {
+        color: white !important;
+        border: 1px black solid;
+        border-radius: 10px 0px 0px 10px;
+        text-decoration: underline;
+        background-color: black;
+    }
+}
+
+
+
