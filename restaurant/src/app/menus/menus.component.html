@@ -1,1 +1,80 @@
-<p>menus works!</p>
+<div class="container bg-light p-3">
+    <div class="row justify-content-around">
+
+    <!-- PIZZAS -->
+        <div class="col-lg-4 col-sm-12" *ngFor="let pizza of this.pizzas">
+            <div class="card mb-3 card-margin" style="width: 18rem;">
+                <img [src]="pizza.image" class="card-img-top" alt="pizza">
+                <div class="card-body">
+                  <h5 class="card-title">{{pizza.title}}</h5>
+                  <p class="card-text">{{pizza.restaurantChain}}</p>
+                  <div class="card-footer text-center">
+                    <small class="text-muted">{{pizza.price}}</small>
+                  </div>
+                </div>
+            </div>
+        </div>
+
+   <!-- BURRITOS -->
+    </div>
+    <div class="row justify-content-around">
+
+        <div class="col-lg-4 col-sm-12" *ngFor="let burrito of this.burritos">
+            <div class="card mb-3 card-margin" style="width: 18rem;">
+                <img [src]="burrito.image" class="card-img-top" alt="burrito">
+                <div class="card-body">
+                  <h5 class="card-title">{{burrito.title}}</h5>
+                  <p class="card-text">{{burrito.restaurantChain}}</p>
+                  <div class="card-footer text-center">
+                    <small class="text-muted">{{burrito.price}}</small>
+                  </div>
+                </div>
+            </div>
+        </div>
+    
+   <!-- SALADS -->
+    </div>
+    <div class="row justify-content-around">
+
+        <div class="col-lg-4 col-sm-12" *ngFor="let salad of this.salads">
+            <div class="card mb-3 card-margin" style="width: 18rem;">
+                <img [src]="salad.image" class="card-img-top" alt="salad">
+                <div class="card-body">
+                  <h5 class="card-title">{{salad.title}}</h5>
+                  <p class="card-text">{{salad.restaurantChain}}</p>
+                  <div class="card-footer text-center">
+                    <small class="text-muted">{{salad.price}}</small>
+                  </div>
+                </div>
+            </div>
+        </div>
+    
+   <!-- FRIES -->
+    </div>
+    <div class="row justify-content-around">
+
+        <div class="col-lg-4 col-sm-12" *ngFor="let frie of this.fries">
+            <div class="card mb-3 card-margin" style="width: 18rem;">
+                <img [src]="frie.image" class="card-img-top" alt="frie">
+                <div class="card-body">
+                  <h5 class="card-title">{{frie.title}}</h5>
+                  <p class="card-text">{{frie.restaurantChain}}</p>
+                  <div class="card-footer text-center">
+                    <small class="text-muted">{{frie.price}}</small>
+                  </div>
+                </div>
+            </div>
+        </div>
+    
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+

@@ -9,11 +9,11 @@ export class ServiceService {
 
   homepageImagesUrl: string;
   homepageImages: any;
+  menusFood: any;
 
 
   constructor(private http: HttpClient) {
     this.homepageImagesUrl = 'https://api.spoonacular.com/food/menuItems/search?apiKey=36b2616bbbd3463891cdf064597f778c&query=burger&number=3'
-
   }
 
   getHomepageImages (): Promise<any> {
@@ -26,6 +26,14 @@ export class ServiceService {
     return(prom);
   }
 
-
+  getMenusFood (foodInput): Promise<any> {
+    const prom = new Promise((resolve,reject)=>{
+      this.http.get(`https://api.spoonacular.com/food/menuItems/search?apiKey=36b2616bbbd3463891cdf064597f778c&query=${foodInput}&number=2`).subscribe(importInfo => {
+      this.menusFood = importInfo;
+      resolve(this.menusFood.menuItems);
+      })
+    })
+    return(prom);
+  }
 
 }

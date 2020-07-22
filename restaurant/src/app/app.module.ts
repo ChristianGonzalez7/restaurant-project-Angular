@@ -3,8 +3,6 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 
-import { GoogleMapsModule } from '@angular/google-maps';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { MenusComponent } from './menus/menus.component';
@@ -29,8 +27,7 @@ import { EquipoComponent } from './equipo/equipo.component';
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    HttpClientModule,
-    GoogleMapsModule
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
