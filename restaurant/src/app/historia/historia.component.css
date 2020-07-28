@@ -1,0 +1,28 @@
+#hamburguesas {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.story {
+    font-family: cursive;
+}
+
+.parrafo {
+    max-width: 90%;
+}
+
+/* Large Devices */
+@media screen and (min-width:481px) {
+    .width-hamburguesas {
+        width: 50%;
+    }
+
+}
+/* Small Devices */
+@media screen and (max-width:480px) {
+    .width-hamburguesas {
+        width: 80%;
+    }
+
+}

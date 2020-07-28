@@ -1,0 +1,25 @@
+img {
+    border: 2px solid black;
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover ;
+}
+
+.contenedor-persona {
+    width: 150px;
+    height: 150px;
+}
+
+/*  Large Devices */
+@media screen and (min-width:481px) {
+    h4, p {
+        width: auto;
+    }
+}
+/* Small Devices */
+@media screen and (max-width:480px) {
+    h4 p {
+        max-width: 150px;
+    }
+}

@@ -21,16 +21,16 @@ export class MenusComponent implements OnInit {
    }
 
   async ngOnInit() {
-    this.pizzas = await this.service.getMenusFood('pizza');
+    this.pizzas = await this.service.getMenusFood('pizza', 2);
     this.pizzas[0].price = '5 €';
     this.pizzas[1].price = '7 €';
-    this.burritos = await this.service.getMenusFood('burrito');
+    this.burritos = await this.service.getMenusFood('burrito', 2);
     this.burritos[0].price = '4,30 €';
     this.burritos[1].price = '5,50 €';
-    this.salads = await this.service.getMenusFood('salad');
+    this.salads = await this.service.getMenusFood('salad', 2);
     this.salads[0].price = '6,80 €';
     this.salads[1].price = '5,90 €';
-    this.fries = await this.service.getMenusFood('fries');
+    this.fries = await this.service.getMenusFood('fries', 2);
     this.fries[0].price = '3,60 €';
     this.fries[1].price = '2,50 €';
   }

@@ -1,1 +1,26 @@
-<p>galeria works!</p>
+<div class="container mt-5 bg-light">
+    <div class="row pt-5 justify-content-around">
+        <div class="circle col-lg-2 col-sm-4" *ngFor="let pizza of this.pizzas">
+            <img [src]="pizza.image" alt="pizza">
+        </div>
+    </div>
+    
+    <div class="row pt-5 justify-content-around">
+        <div class="circle col-lg-2 col-sm-4" *ngFor="let burrito of this.burritos">
+            <img [src]="burrito.image" alt="burrito">
+        </div>
+    </div>
+
+    <div class="row pt-5 justify-content-around">
+        <div class="circle col-lg-2 col-sm-4" *ngFor="let salad of this.salads">
+            <img [src]="salad.image" alt="salad">
+        </div>
+    </div>
+
+    <div class="row pt-5 pb-5 justify-content-around">
+        <div class="circle col-lg-2 col-sm-4" *ngFor="let frie of this.fries">
+            <img [src]="frie.image" alt="frie">
+        </div>
+    </div>
+    
+</div>

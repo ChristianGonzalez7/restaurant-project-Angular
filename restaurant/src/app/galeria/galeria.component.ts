@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ServiceService } from '../service.service';
 
 @Component({
   selector: 'app-galeria',
@@ -7,9 +8,23 @@ import { Component, OnInit } from '@angular/core';
 })
 export class GaleriaComponent implements OnInit {
 
-  constructor() { }
+  pizzas: any;
+  burritos: any;
+  salads: any;
+  fries: any;
 
-  ngOnInit(): void {
+  constructor(private service: ServiceService) {
+    this.pizzas = new Array;
+    this.burritos = new Array;
+    this.salads = new Array;
+    this.fries = new Array;
+   }
+
+  async ngOnInit() {
+    this.pizzas = await this.service.getMenusFood('pizza', 4);
+    this.burritos = await this.service.getMenusFood('burrito', 4);
+    this.salads = await this.service.getMenusFood('salad', 4);
+    this.fries = await this.service.getMenusFood('fries', 4);
   }
 
 }

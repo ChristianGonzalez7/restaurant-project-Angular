@@ -26,9 +26,9 @@ export class ServiceService {
     return(prom);
   }
 
-  getMenusFood (foodInput): Promise<any> {
+  getMenusFood (foodInput, quantity): Promise<any> {
     const prom = new Promise((resolve,reject)=>{
-      this.http.get(`https://api.spoonacular.com/food/menuItems/search?apiKey=36b2616bbbd3463891cdf064597f778c&query=${foodInput}&number=2`).subscribe(importInfo => {
+      this.http.get(`https://api.spoonacular.com/food/menuItems/search?apiKey=36b2616bbbd3463891cdf064597f778c&query=${foodInput}&number=${quantity}`).subscribe(importInfo => {
       this.menusFood = importInfo;
       resolve(this.menusFood.menuItems);
       })
